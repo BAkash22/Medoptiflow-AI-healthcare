@@ -17,7 +17,6 @@ diets = pd.read_csv("datasets/diets.csv")
 
 # load model
 svc = pickle.load(open('models/svc.pkl', 'rb'))
-
 # Helper functions
 def helper(dis):
     desc = description[description['Disease'] == dis]['Description'].iloc[0]
